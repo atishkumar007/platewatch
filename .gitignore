@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+mongo-test-*/
+*.log
+ai-service/models/*.onnx
+ai-service/models/*.pt
+ai-service/models/*.json
+ai-service/models/easyocr/
+ai-service/models/.cache/
+dataset/raw/
+dataset/manifest.json

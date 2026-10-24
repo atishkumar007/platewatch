@@ -1,0 +1,19 @@
+{
+  "name": "platewatch-system",
+  "version": "2.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n WEB,API \"npm run dev -w frontend\" \"npm run dev -w backend\"",
+    "build": "npm run build -w frontend",
+    "test": "npm test -w backend",
+    "seed": "npm run seed -w backend",
+    "setup:env": "node backend/scripts/generate-env.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
